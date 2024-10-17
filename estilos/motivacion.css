@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #E1E1E1;
+}
+
+footer{
+    text-align: end;
+    font-size: 18px;
+    margin-right: 30px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding-top: 0px;
+}
+
+header{
+    background-color: rgb(77, 51, 246);
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: fixed;
+}
+
+
+nav a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin: 0 30px;
+    padding: 5px 15px;
+    border-radius: 30px;
+    font-size: 20px;
+
+}
+
+nav a:hover{
+    background-color: white;
+    color: black;
+}
+h1{
+    color: blue ;
+    text-align: left;
+    font-size: 35px;
+    padding-left: 70px;
+    padding-top: 85px;
+    font-weight: normal;
+    letter-spacing: 3px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "izq medio der";
+    
+}
+
+.izq{
+    grid-area: izq;
+    padding: 30px;
+    text-align: center;
+    
+}
+
+.izq img{
+    border-radius: 20%;
+    width: 70%;
+}
+
+.medio{
+    grid-area: medio;
+    padding-top: 90px;
+    
+    text-align: center;
+}
+
+.medio img{
+    border-radius: 20%;
+    width: 60%;
+    
+}
+
+.der{
+    grid-area: der;
+    margin-right: 70px;
+    margin-top: 30px;
+    font-size: 24px;
+    padding: 25px;
+}
+
+@media (max-width: 768px) {
+    nav a {
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        margin: 0 30px;
+        padding: 0px 0px;
+        border-radius: 30px;
+        font-size: 16px;
+    }
+    h1{
+        text-align: center;
+        font-size: 30px;
+        padding-left: 0px;
+        padding-top: 100px;
+        letter-spacing: 2px;
+    }
+    .contenedor{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "izq medio"
+        "der der";
+        margin-top: 3em;
+    }
+    .izq{
+        padding: 20px;
+    }
+    .medio{
+        padding: 20px;
+    }
+    .izq img{
+        border-radius: 20%;
+        width: 100%;
+    }
+    .medio img{
+        border-radius: 20%;
+        width: 100%;
+    }
+    .der{
+        grid-area: der;
+        margin-right: 0px;
+        margin-top: 20px;
+        font-size: 1.5em;
+        padding: 20px 20px 0px 20px;
+    }
+    footer{
+        text-align: center;
+        margin-right: 0px;
+        padding-top: 2em;
+        padding-bottom: 15px;
+    }
+}
+    @media (min-width: 769px) and (max-width: 1024px) {
+        nav a {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin: 0 30px;
+            padding: 0px 0px;
+            border-radius: 30px;
+            font-size: 16px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 45px;
+            padding-left: 0px;
+            padding-top: 100px;
+            letter-spacing: 2px;
+        }
+        .contenedor{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 
+            "izq medio"
+            "der der";
+            margin-top: 3em;
+        }
+        .izq{
+            padding: 20px;
+        }
+        .medio{
+            padding: 20px;
+        }
+        .izq img{
+            border-radius: 20%;
+            width: 80%;
+        }
+        .medio img{
+            border-radius: 20%;
+            width: 80%;
+        }
+        .der{
+            grid-area: der;
+            margin-right: 0px;
+            margin-top: 20px;
+            font-size: 2em;
+            padding: 2em
+        }
+        footer{
+            text-align: center;
+            margin-right: 0px;
+            padding-top: 0px;
+            padding-bottom: 15px;
+            font-size: 2em;
+        }
+    }
+
